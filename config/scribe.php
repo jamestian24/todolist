@@ -238,7 +238,7 @@ return [
          */
         'use_value' =>
         Scribe::beforeResponseCall(function (\Symfony\Component\HttpFoundation\Request $request, \Knuckles\Camel\Extraction\ExtractedEndpointData $endpointData) {
-            $token = \App\Models\User::first()->api_token;
+            $token = \App\Models\User::first()->createToken('api-token')->plainTextToken;
             $request->headers->add(["Authorization" => "Bearer $token"]);
     }),
 

@@ -89,7 +89,7 @@ function makeAPICall(method, path, body = {}, query = {}, headers = {}, endpoint
         body = JSON.stringify(body)
     }
 
-    const url = new URL(window.location.origin + '/' + path.replace(/^\//, ''));
+    const url = new URL(window.tryItOutBaseUrl + '/' + path.replace(/^\//, ''));
 
     // We need this function because if you try to set an array or object directly to a URLSearchParams object,
     // you'll get [object Object] or the array.toString()

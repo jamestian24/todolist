@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "http:\/\/localhost"
+            "value": "http:\/\/127.0.0.1:8000"
         }
     ],
     "info": {
         "name": "todo list",
-        "_postman_id": "6aa7fa7a-8215-4e7f-999b-ce1300aa5ec0",
+        "_postman_id": "97d2b5c8-08bc-49a4-9626-256e6db9c1df",
         "description": "todo list",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,36 +41,8 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"account\":\"quibusdam\",\"password\":\"quia\"}"
+                            "raw": "{\"account\":\"necessitatibus\",\"password\":\"repellat\"}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/task",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/task"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -88,381 +60,23 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\",\"code\":401}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Store a newly created resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/task",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/task"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"task_descr\":\"xjty\",\"member_id\":9}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/task\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/task\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the task."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\",\"code\":401}",
+                            "code": 422,
+                            "body": "{\"message\":\"auth.failed\",\"errors\":{\"account\":[\"auth.failed\"]}}",
                             "name": ""
                         }
                     ]
-                },
-                {
-                    "name": "Update the specified resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/task\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/task\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the task."
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified resource from storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/task\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/task\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the task."
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/member",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/member"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\",\"code\":401}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Store a newly created resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/member",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/member"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"name\":\"uaocrrvtahbjfwysp\",\"group\":\"gj\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/member\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/member\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "2",
-                                    "description": "The ID of the member."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\",\"code\":401}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Update the specified resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/member\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/member\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "2",
-                                    "description": "The ID of the member."
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Remove the specified resource from storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/member\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/member\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "2",
-                                    "description": "The ID of the member."
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
                 },
                 {
                     "name": "POST api\/auth\/logout",
@@ -490,12 +104,638 @@
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "49"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Member \u6210\u54e1\u8cc7\u6599",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/member",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/member"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[{\"id\":2,\"name\":\"\\u8def\\u8431\\u96c5\",\"group\":\"Front-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":13,\"task_descr\":\"Quia fugit repudiandae doloribus. Non aspernatur qui pariatur dolorem. Voluptas et maxime minus assumenda. Eligendi earum sed quia eaque enim.\",\"member_id\":\"2\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":32,\"task_descr\":\"Facere vel perspiciatis rerum vero. Quos architecto magnam iusto deserunt accusamus sed.\",\"member_id\":\"2\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":40,\"task_descr\":\"Dolor ipsa labore doloremque eveniet. Eius aut in molestiae non. Expedita voluptas velit ducimus aut quos aperiam rerum. A possimus ullam odit.\",\"member_id\":\"2\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":3,\"name\":\"\\u5ee3\\u6587\",\"group\":\"Back-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[]},{\"id\":4,\"name\":\"\\u90d7\\u5fd7\",\"group\":\"Front-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":1,\"task_descr\":\"Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.\",\"member_id\":\"4\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":3,\"task_descr\":\"At tenetur rerum ut neque tempore et alias vel. Sunt ipsa inventore repellat illo quibusdam. Molestias placeat laboriosam doloremque sed aut.\",\"member_id\":\"4\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":19,\"task_descr\":\"Debitis asperiores et eos consequuntur voluptas officia nesciunt. Et culpa reprehenderit magnam nobis tempore. Est odio quisquam earum.\",\"member_id\":\"4\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":44,\"task_descr\":\"Dicta eveniet porro iste odio. Veniam repellat facere dolorum fugit. Totam eveniet qui itaque non magni. Voluptas dolor qui et officia illo reiciendis.\",\"member_id\":\"4\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":48,\"task_descr\":\"test task descr\",\"member_id\":\"4\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-17 06:04:51\"}]},{\"id\":5,\"name\":\"\\u80e5\\u5fc3\\u7f8e\",\"group\":\"UI\\\/UX\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":21,\"task_descr\":\"Tenetur praesentium pariatur magnam voluptatem minus ipsam et. Voluptatibus eaque qui sit labore in. Quisquam totam deleniti ut necessitatibus. Vel quia minima velit earum.\",\"member_id\":\"5\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":6,\"name\":\"\\u5c39\\u6dd1\\u82ac\",\"group\":\"Front-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":16,\"task_descr\":\"Vel hic dolor nostrum quasi sit alias reprehenderit pariatur. Alias itaque nostrum ducimus qui rerum dolor. Voluptatem laudantium ut sed facilis.\",\"member_id\":\"6\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":20,\"task_descr\":\"Amet et nesciunt incidunt dolores voluptas error eveniet. Adipisci consectetur optio consequatur. Non consequatur rem distinctio et.\",\"member_id\":\"6\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":23,\"task_descr\":\"Reiciendis pariatur aut vel pariatur. Dolores reiciendis nisi nobis corrupti doloremque dolorem sapiente alias. Eius eaque omnis perferendis exercitationem doloribus vero sit.\",\"member_id\":\"6\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":24,\"task_descr\":\"Ea iure perferendis sit aut magni. Aut dolorem qui consequatur perspiciatis reprehenderit et quo iusto. Est libero ullam quidem et placeat distinctio.\",\"member_id\":\"6\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":41,\"task_descr\":\"Dolorum dolores animi at. Enim aliquid maxime ipsum id at ab. Necessitatibus quia qui possimus quo et. Sapiente reiciendis unde tempore vitae assumenda aut sunt. Vitae est ipsum ut aut omnis.\",\"member_id\":\"6\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":7,\"name\":\"\\u89e3\\u8c9e\\u51a0\",\"group\":\"APP\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":4,\"task_descr\":\"Sit sint est minima in labore explicabo. Corporis quisquam aliquid reprehenderit doloremque dolorem. Et sit quis odio dolorem aut sed necessitatibus.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":6,\"task_descr\":\"Qui velit pariatur eos libero vitae necessitatibus perspiciatis. Mollitia dicta voluptas autem saepe. Voluptas accusantium iste id aperiam. Tempora ratione delectus nihil.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":25,\"task_descr\":\"Animi qui et aut quod odit fugit. Dicta ut ipsa modi quasi recusandae optio exercitationem. Deleniti aut molestias eligendi vero non esse nobis consequuntur. Error odit perferendis illum praesentium.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":28,\"task_descr\":\"Iste ex quo et laborum iure. Facilis sit voluptas inventore et nobis. Quae et et voluptas sed tempore est ut. Odio ipsam amet fugiat iure porro alias. Quia dolore aut maxime quasi ut quos modi.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":39,\"task_descr\":\"Voluptatem earum ullam non consectetur sed. Minima aliquam dolores iure quisquam qui eaque.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":45,\"task_descr\":\"Nihil ea tempore vero sunt. Molestias necessitatibus praesentium enim cupiditate consequatur. Quibusdam et quas sint facere.\",\"member_id\":\"7\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":8,\"name\":\"\\u6210\\u5b9c\",\"group\":\"APP\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":2,\"task_descr\":\"Iusto in in tempora. Minus necessitatibus esse ut nesciunt nesciunt. Minima animi et asperiores nihil. Nulla officiis numquam sequi.\",\"member_id\":\"8\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":5,\"task_descr\":\"Fugiat nemo adipisci fugit impedit. Animi laborum magni eum vitae. Consequatur sequi qui voluptas est qui assumenda. Nihil occaecati maxime nam natus vero ratione commodi.\",\"member_id\":\"8\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":29,\"task_descr\":\"Voluptas laborum porro accusantium dignissimos eveniet velit vel. Porro delectus consequuntur ipsa repellat sed exercitationem qui. Odit quia fugiat cumque sunt minima eum.\",\"member_id\":\"8\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":47,\"task_descr\":\"Id et iste praesentium ut totam eos. Inventore est ab exercitationem voluptates ullam. Iste nam ut a saepe. Consequatur iste veritatis ab delectus et.\",\"member_id\":\"8\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":9,\"name\":\"\\u611b\\u82ac\\u745c\",\"group\":\"Back-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":8,\"task_descr\":\"Ad est eos sequi explicabo adipisci. Et rerum aliquid laudantium magnam provident aliquid non. Ducimus suscipit culpa est exercitationem commodi tenetur. Quia omnis nulla odio qui.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":12,\"task_descr\":\"Sequi facilis enim consequuntur omnis dolore et qui beatae. Dolor sed iure nemo perspiciatis. Distinctio sequi doloribus ullam cum quia quae. Numquam voluptatem dolor voluptates.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":33,\"task_descr\":\"Quam aperiam ducimus dolorem eum. Dolor totam qui non veritatis sed.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":35,\"task_descr\":\"Quisquam doloremque culpa ducimus neque. Veniam recusandae eos omnis expedita voluptates minus.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":36,\"task_descr\":\"Corrupti quis accusantium voluptatem ut dolor quam doloribus. Facilis illum recusandae voluptas nulla cupiditate quas sapiente. Reiciendis temporibus cumque molestiae pariatur dolore reprehenderit.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":37,\"task_descr\":\"Officiis corporis officiis ut neque minima rerum deserunt. Nisi iste nihil perspiciatis doloribus velit qui. Repellat voluptate harum ea iusto.\",\"member_id\":\"9\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":10,\"name\":\"\\u7a0b\\u742a\\u4f36\",\"group\":\"APP\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":7,\"task_descr\":\"Eaque eum sit ea voluptas aliquam eos. Accusamus consectetur laudantium voluptates vel et sunt necessitatibus. Fugit quod ut culpa dolorum. Vel nostrum nisi minus qui.\",\"member_id\":\"10\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":11,\"task_descr\":\"Est asperiores consectetur aut commodi qui. Et ut sint inventore. Voluptas in et est.\",\"member_id\":\"10\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":14,\"task_descr\":\"Aliquid voluptatem incidunt consequatur quasi dolorem. Delectus eum nesciunt distinctio exercitationem odio vel. Eos fuga qui repellat libero in.\",\"member_id\":\"10\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":18,\"task_descr\":\"Consequatur possimus aut deserunt illo consequatur. Alias eius omnis similique rerum eos ut suscipit ducimus. In quibusdam odio error qui sunt rerum.\",\"member_id\":\"10\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":31,\"task_descr\":\"Et praesentium veniam aspernatur repudiandae et iure. Harum et corporis aut excepturi ut. Officiis cumque rerum ea excepturi quibusdam ut.\",\"member_id\":\"10\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":12,\"name\":\"\\u6d77\\u8a69\",\"group\":\"APP\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\",\"tasks\":[{\"id\":9,\"task_descr\":\"Possimus porro velit qui est repudiandae saepe minus. Temporibus atque aperiam soluta nesciunt quia id. Vel ut perferendis expedita sunt neque qui.\",\"member_id\":\"12\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":17,\"task_descr\":\"Cum totam dignissimos beatae molestias sit molestias molestiae. Est in ut cumque. Aut quas nemo suscipit sed. Sapiente qui alias et saepe excepturi.\",\"member_id\":\"12\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"},{\"id\":42,\"task_descr\":\"Suscipit sunt delectus laboriosam incidunt rem sit. Quia cumque est omnis libero reiciendis. Et exercitationem labore qui.\",\"member_id\":\"12\",\"created_at\":\"2023-08-16 06:42:10\",\"updated_at\":\"2023-08-16 06:42:10\"}]},{\"id\":13,\"name\":\"lenard\",\"group\":\"UI\\\/UX\",\"created_at\":\"2023-08-17T06:32:04.000000Z\",\"updated_at\":\"2023-08-17T06:32:04.000000Z\",\"tasks\":[]},{\"id\":14,\"name\":\"lenard\",\"group\":\"frond-end\",\"created_at\":\"2023-08-17T06:39:42.000000Z\",\"updated_at\":\"2023-08-17T06:39:42.000000Z\",\"tasks\":[]}]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/member",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/member"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ijpuxqsvksay\",\"group\":\"yoxejmasxwsjftff\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "53"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[\"data saved\"]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "52"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"id\":2,\"name\":\"\\u8def\\u8431\\u96c5\",\"group\":\"Front-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "51"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"id\":2,\"name\":\"\\u8def\\u8431\\u96c5\",\"group\":\"Front-end\",\"created_at\":\"2023-08-16T06:42:10.000000Z\",\"updated_at\":\"2023-08-16T06:42:10.000000Z\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/member\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/member\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the member."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "50"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Task \u4efb\u52d9\u8cc7\u6599",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/task",
+                            "query": [
+                                {
+                                    "key": "sort",
+                                    "value": "asc+%2F+desc",
+                                    "description": "sort",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/task?sort=asc+%2F+desc"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"message\":\"\\u7121\\u6cd5\\u627e\\u5230\\u6b64\\u7db2\\u5740\",\"code\":404}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/task",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/task"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"task_descr\":\"mzgenjkiv\",\"member_id\":3}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[\"data saved\"]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/task\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/task\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the task."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":1,\"task_descr\":\"Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.\",\"member_id\":\"4\",\"member_name\":\"\\u90d7\\u5fd7\",\"member_group\":\"Front-end\",\"created_at\":\"2023-08-16 14:42:10\",\"updated_at\":\"2023-08-16 14:42:10\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/task\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/task\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the task."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":1,\"task_descr\":\"Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.\",\"member_id\":\"4\",\"member_name\":\"\\u90d7\\u5fd7\",\"member_group\":\"Front-end\",\"created_at\":\"2023-08-16 14:42:10\",\"updated_at\":\"2023-08-16 14:42:10\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/task\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/task\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the task."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         }
     ],
     "auth": {
-        "type": "noauth"
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "apiKey",
+                "value": null,
+                "type": "string"
+            }
+        ]
     }
 }

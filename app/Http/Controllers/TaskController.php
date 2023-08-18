@@ -8,13 +8,18 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Cache;
+use Knuckles\Scribe\Attributes\QueryParam;
 
-
+/**
+ * @group Task 任務資料
+ * @authenticated
+ */
 class TaskController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    #[QueryParam(name: "sort", type: "string", description: "sort", example: "asc / desc")]
     public function index(Request $request)
     {
         //

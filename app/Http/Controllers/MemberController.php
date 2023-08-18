@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * @group Member 成員資料
+ * @authenticated
+ */
 class MemberController extends Controller
 {
     /**
@@ -42,7 +46,7 @@ class MemberController extends Controller
         $member->group = $request->group;
         $member->save();
 
-        return response()->json(['post saved'], 200);
+        return response()->json(['data saved'], 200);
     }
 
     /**
