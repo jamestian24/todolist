@@ -22,7 +22,8 @@ class TaskFactory extends Factory
         return [
             //
             'task_descr' => fake()->text(),
-            'member_id' => fake()->numberBetween(1,12)
+            'member_id' => fake()->numberBetween(1,12),
+            'creator_id' => fake()->numberBetween(1,12)
         ];
     }
 }

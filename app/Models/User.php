@@ -42,4 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function Users()
+    {
+        //hasMany(類別名稱, 參照欄位, 主鍵)
+        return $this->hasMany('App\Models\Task', 'creator_id', 'id');
+    }
 }

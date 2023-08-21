@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(5)->create();
         Task::factory(50)->create();
         member::factory(12)->create();
+        User::factory(12)->create();
         Schema::enableForeignKeyConstraints();
     }
 }
