@@ -18,8 +18,9 @@ class TaskResource extends JsonResource
             'id'=>$this->id,
             'task_descr'=>$this->task_descr,
             'member_id'=>$this->member_id,
-            'member_name'=> isset($this->member) ? $this->member->name : null,
-            'member_group'=> isset($this->member) ? $this->member->group : null,
+            'member_name'=>isset($this->member) ? $this->member->name : null,
+            'member_group'=>isset($this->member) ? $this->member->group : null,
+            'creator_id'=>$this->creator_id,
             'created_at'=>(string)$this->created_at,
             'updated_at'=>(string)$this->updated_at
         ];

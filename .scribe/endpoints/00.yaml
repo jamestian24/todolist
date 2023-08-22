@@ -26,19 +26,19 @@ endpoints:
         name: account
         description: ''
         required: true
-        example: necessitatibus
+        example: vel
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: repellat
+        example: reprehenderit
         type: string
         custom: []
     cleanBodyParameters:
-      account: necessitatibus
-      password: repellat
+      account: vel
+      password: reprehenderit
     fileParameters: []
     responses:
       -

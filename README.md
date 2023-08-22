@@ -3,7 +3,7 @@
 - PHP 8.1.17
 - Laravel 10.19.0
 
-### 設定.env
+#### 設定.env
 1. 生成.env檔案
 
     ```bash
@@ -26,7 +26,10 @@
     php artisan serve
 ```
 
-### 產生API文件
+#### 產生API文件
 ```
-php artisan scribe:generate
+    php artisan scribe:generate
 ```
+#### 測試帳號密碼
+admin \
+password

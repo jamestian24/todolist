@@ -63,7 +63,7 @@ class Handler extends ExceptionHandler
             }
             if($exception instanceof InvalidArgumentException){
                 return $this->errorResponse(
-                    '無法找到此網址',
+                    '無法找到此ID',
                     Response::HTTP_NOT_FOUND
                 );
             }

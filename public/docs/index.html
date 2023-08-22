@@ -116,7 +116,7 @@
                                 <a href="#task-GETapi-task--id-">Display the specified resource.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="task-PUTapi-task--id-">
-                                <a href="#task-PUTapi-task--id-">Update the specified resource in storage.</a>
+                                <a href="#task-PUTapi-task--id-">PUT api/task/{id}</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="task-DELETEapi-task--id-">
                                 <a href="#task-DELETEapi-task--id-">Remove the specified resource from storage.</a>
@@ -132,7 +132,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: August 18, 2023</li>
+        <li>Last updated: August 22, 2023</li>
     </ul>
 </div>
 
@@ -174,8 +174,8 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"account\": \"necessitatibus\",
-    \"password\": \"repellat\"
+    \"account\": \"vel\",
+    \"password\": \"reprehenderit\"
 }"
 </code></pre></div>
 
@@ -191,8 +191,8 @@ const headers = {
 };
 
 let body = {
-    "account": "necessitatibus",
-    "password": "repellat"
+    "account": "vel",
+    "password": "reprehenderit"
 };
 
 fetch(url, {
@@ -304,10 +304,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="account"                data-endpoint="POSTapi-auth-login"
-               value="necessitatibus"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>necessitatibus</code></p>
+<p>Example: <code>vel</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -315,10 +315,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-login"
-               value="repellat"
+               value="reprehenderit"
                data-component="body">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>reprehenderit</code></p>
         </div>
         </form>
 
@@ -503,375 +503,512 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: 2,
-        &quot;name&quot;: &quot;路萱雅&quot;,
-        &quot;group&quot;: &quot;Front-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;帥依庭&quot;,
+        &quot;group&quot;: &quot;UI/UX&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 13,
-                &quot;task_descr&quot;: &quot;Quia fugit repudiandae doloribus. Non aspernatur qui pariatur dolorem. Voluptas et maxime minus assumenda. Eligendi earum sed quia eaque enim.&quot;,
-                &quot;member_id&quot;: &quot;2&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;id&quot;: 16,
+                &quot;task_descr&quot;: &quot;Et nihil veritatis qui minus provident sed. Cupiditate explicabo quia qui deleniti.&quot;,
+                &quot;member_id&quot;: &quot;1&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 32,
-                &quot;task_descr&quot;: &quot;Facere vel perspiciatis rerum vero. Quos architecto magnam iusto deserunt accusamus sed.&quot;,
-                &quot;member_id&quot;: &quot;2&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;id&quot;: 25,
+                &quot;task_descr&quot;: &quot;Quia eligendi labore sed dolor nihil. Reprehenderit est repellat magni necessitatibus. Nulla molestiae sed minima quas. Modi ipsum est aut modi.&quot;,
+                &quot;member_id&quot;: &quot;1&quot;,
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 40,
-                &quot;task_descr&quot;: &quot;Dolor ipsa labore doloremque eveniet. Eius aut in molestiae non. Expedita voluptas velit ducimus aut quos aperiam rerum. A possimus ullam odit.&quot;,
+                &quot;id&quot;: 42,
+                &quot;task_descr&quot;: &quot;Repellendus aperiam repellat repellendus reprehenderit quis eum. Quia voluptas dolore assumenda corrupti sequi impedit tenetur. Ad hic voluptatem aut consequuntur et ut et.&quot;,
+                &quot;member_id&quot;: &quot;1&quot;,
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 50,
+                &quot;task_descr&quot;: &quot;Et praesentium distinctio deleniti culpa. Deserunt tempore et non veritatis et. Exercitationem beatae in aut molestiae quam.&quot;,
+                &quot;member_id&quot;: &quot;1&quot;,
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            }
+        ]
+    },
+    {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;嚴霖廷&quot;,
+        &quot;group&quot;: &quot;Back-end&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;tasks&quot;: [
+            {
+                &quot;id&quot;: 5,
+                &quot;task_descr&quot;: &quot;Eos sint praesentium voluptatem expedita ut molestiae quos. Voluptatem ea asperiores et enim cum et.&quot;,
                 &quot;member_id&quot;: &quot;2&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;2&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;task_descr&quot;: &quot;Sit sint fugiat ipsum deleniti. Repudiandae eveniet nulla aut et quia odit reiciendis. Esse voluptatem voluptates non reprehenderit et. Aliquid et eum ut cumque et.&quot;,
+                &quot;member_id&quot;: &quot;2&quot;,
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 47,
+                &quot;task_descr&quot;: &quot;Voluptate voluptatem molestiae quis quia. Veniam rerum et est et. Similique sit aut ut tempore.&quot;,
+                &quot;member_id&quot;: &quot;2&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 48,
+                &quot;task_descr&quot;: &quot;set ap&quot;,
+                &quot;member_id&quot;: &quot;2&quot;,
+                &quot;creator_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-22 01:55:23&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 3,
-        &quot;name&quot;: &quot;廣文&quot;,
-        &quot;group&quot;: &quot;Back-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;tasks&quot;: []
+        &quot;name&quot;: &quot;鄂銘彥&quot;,
+        &quot;group&quot;: &quot;Front-end&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;tasks&quot;: [
+            {
+                &quot;id&quot;: 35,
+                &quot;task_descr&quot;: &quot;Perferendis quasi eos eos voluptatibus et et. Et aut praesentium maiores.&quot;,
+                &quot;member_id&quot;: &quot;3&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 37,
+                &quot;task_descr&quot;: &quot;Veniam sapiente asperiores at perferendis ipsam omnis quibusdam. Unde aliquam minus quod ipsa deleniti dicta. Sint mollitia quis cum consequatur.&quot;,
+                &quot;member_id&quot;: &quot;3&quot;,
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 38,
+                &quot;task_descr&quot;: &quot;Aut dolores consequuntur quaerat sequi. Aut vero natus similique quasi amet consectetur. Accusamus voluptatum autem ratione similique molestiae voluptatum modi.&quot;,
+                &quot;member_id&quot;: &quot;3&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            }
+        ]
     },
     {
         &quot;id&quot;: 4,
-        &quot;name&quot;: &quot;郗志&quot;,
-        &quot;group&quot;: &quot;Front-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;項威&quot;,
+        &quot;group&quot;: &quot;APP&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 1,
-                &quot;task_descr&quot;: &quot;Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.&quot;,
+                &quot;id&quot;: 12,
+                &quot;task_descr&quot;: &quot;Itaque aut repellat rerum nemo aut necessitatibus. Praesentium ut voluptatem excepturi quae voluptatem aliquid consequatur.&quot;,
                 &quot;member_id&quot;: &quot;4&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;10&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 3,
-                &quot;task_descr&quot;: &quot;At tenetur rerum ut neque tempore et alias vel. Sunt ipsa inventore repellat illo quibusdam. Molestias placeat laboriosam doloremque sed aut.&quot;,
+                &quot;id&quot;: 21,
+                &quot;task_descr&quot;: &quot;Aut in itaque quia cum facere. Quidem sit omnis voluptas animi quia. Similique voluptatem assumenda facilis occaecati.&quot;,
                 &quot;member_id&quot;: &quot;4&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;5&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 19,
-                &quot;task_descr&quot;: &quot;Debitis asperiores et eos consequuntur voluptas officia nesciunt. Et culpa reprehenderit magnam nobis tempore. Est odio quisquam earum.&quot;,
+                &quot;id&quot;: 43,
+                &quot;task_descr&quot;: &quot;Fugit delectus dolorum ut sunt. Voluptates nesciunt voluptatem doloribus minima et aliquam. Laboriosam laborum enim id harum. Enim adipisci quam unde rerum.&quot;,
                 &quot;member_id&quot;: &quot;4&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 44,
-                &quot;task_descr&quot;: &quot;Dicta eveniet porro iste odio. Veniam repellat facere dolorum fugit. Totam eveniet qui itaque non magni. Voluptas dolor qui et officia illo reiciendis.&quot;,
-                &quot;member_id&quot;: &quot;4&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 48,
-                &quot;task_descr&quot;: &quot;test task descr&quot;,
-                &quot;member_id&quot;: &quot;4&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-17 06:04:51&quot;
+                &quot;creator_id&quot;: &quot;12&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 5,
-        &quot;name&quot;: &quot;胥心美&quot;,
-        &quot;group&quot;: &quot;UI/UX&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;巴文依&quot;,
+        &quot;group&quot;: &quot;APP&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 21,
-                &quot;task_descr&quot;: &quot;Tenetur praesentium pariatur magnam voluptatem minus ipsam et. Voluptatibus eaque qui sit labore in. Quisquam totam deleniti ut necessitatibus. Vel quia minima velit earum.&quot;,
+                &quot;id&quot;: 15,
+                &quot;task_descr&quot;: &quot;Et est sit sed dolores amet quasi cupiditate. Architecto provident in culpa occaecati aliquam. Ut sint dolore quo beatae maiores nostrum facere.&quot;,
                 &quot;member_id&quot;: &quot;5&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 18,
+                &quot;task_descr&quot;: &quot;Neque velit asperiores sint tempora deserunt. Eaque ut autem et eos in maxime sint. Fuga nulla omnis dolorum voluptatibus magni temporibus beatae ut. Ut quo aspernatur quis mollitia soluta aut quia.&quot;,
+                &quot;member_id&quot;: &quot;5&quot;,
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 23,
+                &quot;task_descr&quot;: &quot;Aliquam quisquam deserunt culpa sit quae nemo. Quos reprehenderit aut eos dicta dolor aut.&quot;,
+                &quot;member_id&quot;: &quot;5&quot;,
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 41,
+                &quot;task_descr&quot;: &quot;Rerum et dolorem eaque. Ut sunt sunt modi quaerat assumenda.&quot;,
+                &quot;member_id&quot;: &quot;5&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 6,
-        &quot;name&quot;: &quot;尹淑芬&quot;,
-        &quot;group&quot;: &quot;Front-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;喬哲華&quot;,
+        &quot;group&quot;: &quot;UI/UX&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 16,
-                &quot;task_descr&quot;: &quot;Vel hic dolor nostrum quasi sit alias reprehenderit pariatur. Alias itaque nostrum ducimus qui rerum dolor. Voluptatem laudantium ut sed facilis.&quot;,
+                &quot;id&quot;: 4,
+                &quot;task_descr&quot;: &quot;Qui fugiat quo repellendus ut. Similique voluptatem fugit quis ut. Soluta ea eos unde itaque autem quia.&quot;,
                 &quot;member_id&quot;: &quot;6&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;8&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 20,
-                &quot;task_descr&quot;: &quot;Amet et nesciunt incidunt dolores voluptas error eveniet. Adipisci consectetur optio consequatur. Non consequatur rem distinctio et.&quot;,
+                &quot;id&quot;: 6,
+                &quot;task_descr&quot;: &quot;Mollitia inventore minima architecto est ratione. Repellendus eius nostrum quo sit consequatur aut et. Ad ipsum aut qui ducimus iusto aliquam et. Necessitatibus sint aliquam natus adipisci.&quot;,
                 &quot;member_id&quot;: &quot;6&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 23,
-                &quot;task_descr&quot;: &quot;Reiciendis pariatur aut vel pariatur. Dolores reiciendis nisi nobis corrupti doloremque dolorem sapiente alias. Eius eaque omnis perferendis exercitationem doloribus vero sit.&quot;,
+                &quot;id&quot;: 26,
+                &quot;task_descr&quot;: &quot;Ad qui fugiat reiciendis enim dolores beatae. Vel laudantium dolorum quia necessitatibus. Sed est deserunt et ab. Placeat error quas harum deleniti aliquid aut corrupti.&quot;,
                 &quot;member_id&quot;: &quot;6&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 24,
-                &quot;task_descr&quot;: &quot;Ea iure perferendis sit aut magni. Aut dolorem qui consequatur perspiciatis reprehenderit et quo iusto. Est libero ullam quidem et placeat distinctio.&quot;,
-                &quot;member_id&quot;: &quot;6&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 41,
-                &quot;task_descr&quot;: &quot;Dolorum dolores animi at. Enim aliquid maxime ipsum id at ab. Necessitatibus quia qui possimus quo et. Sapiente reiciendis unde tempore vitae assumenda aut sunt. Vitae est ipsum ut aut omnis.&quot;,
-                &quot;member_id&quot;: &quot;6&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;8&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 7,
-        &quot;name&quot;: &quot;解貞冠&quot;,
-        &quot;group&quot;: &quot;APP&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;武文華&quot;,
+        &quot;group&quot;: &quot;Front-end&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 4,
-                &quot;task_descr&quot;: &quot;Sit sint est minima in labore explicabo. Corporis quisquam aliquid reprehenderit doloremque dolorem. Et sit quis odio dolorem aut sed necessitatibus.&quot;,
+                &quot;id&quot;: 19,
+                &quot;task_descr&quot;: &quot;Ducimus quam tempore qui sed omnis distinctio facilis itaque. Fuga quo incidunt reiciendis consequatur nihil ut. Qui ad distinctio ut omnis.&quot;,
                 &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;7&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 6,
-                &quot;task_descr&quot;: &quot;Qui velit pariatur eos libero vitae necessitatibus perspiciatis. Mollitia dicta voluptas autem saepe. Voluptas accusantium iste id aperiam. Tempora ratione delectus nihil.&quot;,
+                &quot;id&quot;: 32,
+                &quot;task_descr&quot;: &quot;Recusandae odit molestiae sequi veniam in omnis consequatur. Rerum soluta reiciendis fugiat consequatur. Velit velit sed quia aspernatur et illo sequi.&quot;,
                 &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             },
             {
-                &quot;id&quot;: 25,
-                &quot;task_descr&quot;: &quot;Animi qui et aut quod odit fugit. Dicta ut ipsa modi quasi recusandae optio exercitationem. Deleniti aut molestias eligendi vero non esse nobis consequuntur. Error odit perferendis illum praesentium.&quot;,
+                &quot;id&quot;: 40,
+                &quot;task_descr&quot;: &quot;Est aliquam tenetur labore harum placeat molestias. Culpa tenetur consectetur accusamus ut explicabo quae est. Reprehenderit fugiat dolor magni nesciunt qui eligendi.&quot;,
                 &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;10&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             },
             {
-                &quot;id&quot;: 28,
-                &quot;task_descr&quot;: &quot;Iste ex quo et laborum iure. Facilis sit voluptas inventore et nobis. Quae et et voluptas sed tempore est ut. Odio ipsam amet fugiat iure porro alias. Quia dolore aut maxime quasi ut quos modi.&quot;,
+                &quot;id&quot;: 44,
+                &quot;task_descr&quot;: &quot;Quas nemo nisi odit repudiandae. Quo sunt laboriosam aliquam vitae aut sunt. Voluptatem consequatur in temporibus et dolor quo excepturi quibusdam. Harum minima non omnis similique.&quot;,
                 &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 39,
-                &quot;task_descr&quot;: &quot;Voluptatem earum ullam non consectetur sed. Minima aliquam dolores iure quisquam qui eaque.&quot;,
-                &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 45,
-                &quot;task_descr&quot;: &quot;Nihil ea tempore vero sunt. Molestias necessitatibus praesentium enim cupiditate consequatur. Quibusdam et quas sint facere.&quot;,
-                &quot;member_id&quot;: &quot;7&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 8,
-        &quot;name&quot;: &quot;成宜&quot;,
-        &quot;group&quot;: &quot;APP&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;卜銘柏&quot;,
+        &quot;group&quot;: &quot;UI/UX&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 2,
-                &quot;task_descr&quot;: &quot;Iusto in in tempora. Minus necessitatibus esse ut nesciunt nesciunt. Minima animi et asperiores nihil. Nulla officiis numquam sequi.&quot;,
+                &quot;id&quot;: 11,
+                &quot;task_descr&quot;: &quot;Impedit nemo assumenda quis sit. Pariatur similique optio aut eos commodi eaque at aspernatur. Nisi perspiciatis quo quia laboriosam rerum et. Architecto cupiditate ut eum pariatur maiores.&quot;,
                 &quot;member_id&quot;: &quot;8&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 5,
-                &quot;task_descr&quot;: &quot;Fugiat nemo adipisci fugit impedit. Animi laborum magni eum vitae. Consequatur sequi qui voluptas est qui assumenda. Nihil occaecati maxime nam natus vero ratione commodi.&quot;,
+                &quot;id&quot;: 17,
+                &quot;task_descr&quot;: &quot;Nihil suscipit soluta id dolor rerum non nihil. Quod corrupti autem sit eum necessitatibus inventore est. Eum totam expedita et rem quasi voluptatem dolorem.&quot;,
                 &quot;member_id&quot;: &quot;8&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 29,
-                &quot;task_descr&quot;: &quot;Voluptas laborum porro accusantium dignissimos eveniet velit vel. Porro delectus consequuntur ipsa repellat sed exercitationem qui. Odit quia fugiat cumque sunt minima eum.&quot;,
+                &quot;id&quot;: 49,
+                &quot;task_descr&quot;: &quot;Deserunt provident voluptas et qui. Omnis deserunt suscipit vitae autem exercitationem dolorum expedita architecto. Ea minus consequatur dolorem quia quo voluptatum. Qui qui saepe sit quos velit.&quot;,
                 &quot;member_id&quot;: &quot;8&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 47,
-                &quot;task_descr&quot;: &quot;Id et iste praesentium ut totam eos. Inventore est ab exercitationem voluptates ullam. Iste nam ut a saepe. Consequatur iste veritatis ab delectus et.&quot;,
-                &quot;member_id&quot;: &quot;8&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 9,
-        &quot;name&quot;: &quot;愛芬瑜&quot;,
-        &quot;group&quot;: &quot;Back-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;公孫思宗&quot;,
+        &quot;group&quot;: &quot;APP&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 8,
-                &quot;task_descr&quot;: &quot;Ad est eos sequi explicabo adipisci. Et rerum aliquid laudantium magnam provident aliquid non. Ducimus suscipit culpa est exercitationem commodi tenetur. Quia omnis nulla odio qui.&quot;,
+                &quot;id&quot;: 1,
+                &quot;task_descr&quot;: &quot;buy coffee&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 06:15:20&quot;
             },
             {
-                &quot;id&quot;: 12,
-                &quot;task_descr&quot;: &quot;Sequi facilis enim consequuntur omnis dolore et qui beatae. Dolor sed iure nemo perspiciatis. Distinctio sequi doloribus ullam cum quia quae. Numquam voluptatem dolor voluptates.&quot;,
+                &quot;id&quot;: 2,
+                &quot;task_descr&quot;: &quot;Est sunt et culpa velit voluptas magnam. Adipisci tempora ad dolorum et qui. Et est similique quam. Alias quia quae quia nam dolorem placeat. Dolorem provident error et totam cum ut.&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;2&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 33,
-                &quot;task_descr&quot;: &quot;Quam aperiam ducimus dolorem eum. Dolor totam qui non veritatis sed.&quot;,
+                &quot;id&quot;: 3,
+                &quot;task_descr&quot;: &quot;Nihil assumenda voluptatem quas officiis unde officiis est. Sunt vero quae non enim possimus esse. Magnam animi inventore nulla dicta accusantium perspiciatis.&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;7&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 35,
-                &quot;task_descr&quot;: &quot;Quisquam doloremque culpa ducimus neque. Veniam recusandae eos omnis expedita voluptates minus.&quot;,
+                &quot;id&quot;: 22,
+                &quot;task_descr&quot;: &quot;Enim dolores excepturi aut voluptatem accusantium optio magnam. Earum nisi ea officiis cupiditate aut velit quo.&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 36,
-                &quot;task_descr&quot;: &quot;Corrupti quis accusantium voluptatem ut dolor quam doloribus. Facilis illum recusandae voluptas nulla cupiditate quas sapiente. Reiciendis temporibus cumque molestiae pariatur dolore reprehenderit.&quot;,
+                &quot;id&quot;: 24,
+                &quot;task_descr&quot;: &quot;Dolorem error voluptas assumenda quia. Asperiores a amet quaerat qui reprehenderit doloremque. Autem consequuntur natus minus repudiandae. Architecto deserunt unde et nesciunt.&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 37,
-                &quot;task_descr&quot;: &quot;Officiis corporis officiis ut neque minima rerum deserunt. Nisi iste nihil perspiciatis doloribus velit qui. Repellat voluptate harum ea iusto.&quot;,
+                &quot;id&quot;: 27,
+                &quot;task_descr&quot;: &quot;Error qui atque dolores libero ea minus ut. Inventore dignissimos dolorem sequi et. Perspiciatis ut harum amet incidunt aut quia maxime.&quot;,
                 &quot;member_id&quot;: &quot;9&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;10&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 29,
+                &quot;task_descr&quot;: &quot;Et fugiat natus rerum recusandae. Corporis voluptatum distinctio et. Odit ipsa ut ut cum incidunt. Vitae in quia reiciendis et saepe qui explicabo.&quot;,
+                &quot;member_id&quot;: &quot;9&quot;,
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 31,
+                &quot;task_descr&quot;: &quot;Quam cumque porro autem explicabo dolore. A blanditiis pariatur facere ut vel debitis iure. Officia est omnis est et nihil reiciendis ratione. Culpa cum ipsum voluptas aliquid saepe.&quot;,
+                &quot;member_id&quot;: &quot;9&quot;,
+                &quot;creator_id&quot;: &quot;6&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 34,
+                &quot;task_descr&quot;: &quot;Fugiat dolor autem illo dolorem. Temporibus aut fugit in est odio dolore quisquam. Vel ipsa odio et voluptas a repudiandae sit. Tempore eum in maxime quibusdam dolor corporis id.&quot;,
+                &quot;member_id&quot;: &quot;9&quot;,
+                &quot;creator_id&quot;: &quot;2&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 39,
+                &quot;task_descr&quot;: &quot;Voluptas aut magnam velit libero corrupti. Labore et laudantium tempora sit laudantium et. Eum et quaerat quis vel.&quot;,
+                &quot;member_id&quot;: &quot;9&quot;,
+                &quot;creator_id&quot;: &quot;5&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 46,
+                &quot;task_descr&quot;: &quot;Quasi veritatis et nostrum numquam. Velit quia tempore minus eaque. Id incidunt consequatur distinctio enim. Tenetur minima dolor non laboriosam repellat et.&quot;,
+                &quot;member_id&quot;: &quot;9&quot;,
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 10,
-        &quot;name&quot;: &quot;程琪伶&quot;,
-        &quot;group&quot;: &quot;APP&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;鄂琬&quot;,
+        &quot;group&quot;: &quot;Front-end&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
-                &quot;id&quot;: 7,
-                &quot;task_descr&quot;: &quot;Eaque eum sit ea voluptas aliquam eos. Accusamus consectetur laudantium voluptates vel et sunt necessitatibus. Fugit quod ut culpa dolorum. Vel nostrum nisi minus qui.&quot;,
-                &quot;member_id&quot;: &quot;10&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
-                &quot;id&quot;: 11,
-                &quot;task_descr&quot;: &quot;Est asperiores consectetur aut commodi qui. Et ut sint inventore. Voluptas in et est.&quot;,
-                &quot;member_id&quot;: &quot;10&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
-            },
-            {
                 &quot;id&quot;: 14,
-                &quot;task_descr&quot;: &quot;Aliquid voluptatem incidunt consequatur quasi dolorem. Delectus eum nesciunt distinctio exercitationem odio vel. Eos fuga qui repellat libero in.&quot;,
+                &quot;task_descr&quot;: &quot;Delectus aliquid alias quo beatae sit. Dolor ratione asperiores animi magnam. Sint dolores quidem itaque nihil.&quot;,
                 &quot;member_id&quot;: &quot;10&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;5&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 18,
-                &quot;task_descr&quot;: &quot;Consequatur possimus aut deserunt illo consequatur. Alias eius omnis similique rerum eos ut suscipit ducimus. In quibusdam odio error qui sunt rerum.&quot;,
+                &quot;id&quot;: 30,
+                &quot;task_descr&quot;: &quot;Non fugit quae dignissimos tempore. Dolorum quia iste modi enim accusamus ratione aperiam. Voluptatem magni vitae et ex saepe. Exercitationem dolor quod veniam qui sit sint quia cumque.&quot;,
                 &quot;member_id&quot;: &quot;10&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            }
+        ]
+    },
+    {
+        &quot;id&quot;: 11,
+        &quot;name&quot;: &quot;燕霖樺&quot;,
+        &quot;group&quot;: &quot;APP&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;tasks&quot;: [
+            {
+                &quot;id&quot;: 10,
+                &quot;task_descr&quot;: &quot;Repellat voluptatem blanditiis tempore maiores et. Ipsum fuga rerum culpa aut. Voluptatum et tempora dolorum voluptas. Ut quo omnis perferendis nobis consequatur provident id.&quot;,
+                &quot;member_id&quot;: &quot;11&quot;,
+                &quot;creator_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 31,
-                &quot;task_descr&quot;: &quot;Et praesentium veniam aspernatur repudiandae et iure. Harum et corporis aut excepturi ut. Officiis cumque rerum ea excepturi quibusdam ut.&quot;,
-                &quot;member_id&quot;: &quot;10&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;id&quot;: 13,
+                &quot;task_descr&quot;: &quot;Earum fugiat nobis rerum voluptas sapiente nulla omnis. Aut dolorem ducimus quia veniam.&quot;,
+                &quot;member_id&quot;: &quot;11&quot;,
+                &quot;creator_id&quot;: &quot;9&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 36,
+                &quot;task_descr&quot;: &quot;Fugiat est occaecati maiores quod amet omnis temporibus rem. Laudantium animi sunt molestiae rerum ab. Corrupti hic consectetur velit quisquam sit et.&quot;,
+                &quot;member_id&quot;: &quot;11&quot;,
+                &quot;creator_id&quot;: &quot;6&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
+            },
+            {
+                &quot;id&quot;: 45,
+                &quot;task_descr&quot;: &quot;Et consequatur sint quia doloribus vel adipisci. Sit aut nihil unde. Voluptatem et nisi expedita soluta vel tempore vel. Dicta minima quia aut enim.&quot;,
+                &quot;member_id&quot;: &quot;11&quot;,
+                &quot;creator_id&quot;: &quot;10&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
     },
     {
         &quot;id&quot;: 12,
-        &quot;name&quot;: &quot;海詩&quot;,
-        &quot;group&quot;: &quot;APP&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
+        &quot;name&quot;: &quot;苗淑&quot;,
+        &quot;group&quot;: &quot;Back-end&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
         &quot;tasks&quot;: [
             {
+                &quot;id&quot;: 7,
+                &quot;task_descr&quot;: &quot;Non voluptate suscipit aut aut provident ab quia. Velit id ullam harum voluptas corporis odit.&quot;,
+                &quot;member_id&quot;: &quot;12&quot;,
+                &quot;creator_id&quot;: &quot;10&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
                 &quot;id&quot;: 9,
-                &quot;task_descr&quot;: &quot;Possimus porro velit qui est repudiandae saepe minus. Temporibus atque aperiam soluta nesciunt quia id. Vel ut perferendis expedita sunt neque qui.&quot;,
+                &quot;task_descr&quot;: &quot;Et cupiditate velit odio vel qui officiis. Pariatur consequuntur fugiat impedit ullam aut architecto dicta. Qui aspernatur voluptate enim quia illo.&quot;,
                 &quot;member_id&quot;: &quot;12&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 17,
-                &quot;task_descr&quot;: &quot;Cum totam dignissimos beatae molestias sit molestias molestiae. Est in ut cumque. Aut quas nemo suscipit sed. Sapiente qui alias et saepe excepturi.&quot;,
+                &quot;id&quot;: 20,
+                &quot;task_descr&quot;: &quot;Accusamus numquam iusto omnis quaerat quasi voluptatem commodi. Sint debitis ut fuga et. Exercitationem aut provident consectetur expedita et. Quos tempore esse sint tenetur consectetur sit atque.&quot;,
                 &quot;member_id&quot;: &quot;12&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;3&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
             },
             {
-                &quot;id&quot;: 42,
-                &quot;task_descr&quot;: &quot;Suscipit sunt delectus laboriosam incidunt rem sit. Quia cumque est omnis libero reiciendis. Et exercitationem labore qui.&quot;,
+                &quot;id&quot;: 28,
+                &quot;task_descr&quot;: &quot;Sed nihil nihil dolores vel aut minus consequatur. Ut laboriosam et reiciendis modi voluptate harum ut. Occaecati quia ut quasi rerum quo.&quot;,
                 &quot;member_id&quot;: &quot;12&quot;,
-                &quot;created_at&quot;: &quot;2023-08-16 06:42:10&quot;,
-                &quot;updated_at&quot;: &quot;2023-08-16 06:42:10&quot;
+                &quot;creator_id&quot;: &quot;11&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:34&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:34&quot;
+            },
+            {
+                &quot;id&quot;: 33,
+                &quot;task_descr&quot;: &quot;Explicabo illo iusto dolores aperiam ut quis ut. Quod sunt odio nihil aliquid aut ut.&quot;,
+                &quot;member_id&quot;: &quot;12&quot;,
+                &quot;creator_id&quot;: &quot;4&quot;,
+                &quot;created_at&quot;: &quot;2023-08-21 04:04:35&quot;,
+                &quot;updated_at&quot;: &quot;2023-08-21 04:04:35&quot;
             }
         ]
-    },
-    {
-        &quot;id&quot;: 13,
-        &quot;name&quot;: &quot;lenard&quot;,
-        &quot;group&quot;: &quot;UI/UX&quot;,
-        &quot;created_at&quot;: &quot;2023-08-17T06:32:04.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-17T06:32:04.000000Z&quot;,
-        &quot;tasks&quot;: []
-    },
-    {
-        &quot;id&quot;: 14,
-        &quot;name&quot;: &quot;lenard&quot;,
-        &quot;group&quot;: &quot;frond-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-17T06:39:42.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-17T06:39:42.000000Z&quot;,
-        &quot;tasks&quot;: []
     }
 ]</code>
  </pre>
@@ -977,8 +1114,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ijpuxqsvksay\",
-    \"group\": \"yoxejmasxwsjftff\"
+    \"name\": \"dmemdwvmcheqszjvuxmhw\",
+    \"group\": \"wixkzriupnozeyocjoiujktez\"
 }"
 </code></pre></div>
 
@@ -995,8 +1132,8 @@ const headers = {
 };
 
 let body = {
-    "name": "ijpuxqsvksay",
-    "group": "yoxejmasxwsjftff"
+    "name": "dmemdwvmcheqszjvuxmhw",
+    "group": "wixkzriupnozeyocjoiujktez"
 };
 
 fetch(url, {
@@ -1114,10 +1251,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-member"
-               value="ijpuxqsvksay"
+               value="dmemdwvmcheqszjvuxmhw"
                data-component="body">
     <br>
-<p>value 不能超過 255 個字元. Example: <code>ijpuxqsvksay</code></p>
+<p>value 不能超過 255 個字元. Example: <code>dmemdwvmcheqszjvuxmhw</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>group</code></b>&nbsp;&nbsp;
@@ -1125,10 +1262,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="group"                data-endpoint="POSTapi-member"
-               value="yoxejmasxwsjftff"
+               value="wixkzriupnozeyocjoiujktez"
                data-component="body">
     <br>
-<p>value 不能超過 255 個字元. Example: <code>yoxejmasxwsjftff</code></p>
+<p>value 不能超過 255 個字元. Example: <code>wixkzriupnozeyocjoiujktez</code></p>
         </div>
         </form>
 
@@ -1146,7 +1283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/member/2" \
+    --get "http://127.0.0.1:8000/api/member/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1154,7 +1291,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/member/2"
+    "http://127.0.0.1:8000/api/member/1"
 );
 
 const headers = {
@@ -1186,11 +1323,11 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 2,
-    &quot;name&quot;: &quot;路萱雅&quot;,
-    &quot;group&quot;: &quot;Front-end&quot;,
-    &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;帥依庭&quot;,
+    &quot;group&quot;: &quot;UI/UX&quot;,
+    &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -1281,10 +1418,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-member--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the member. Example: <code>2</code></p>
+<p>The ID of the member. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1302,7 +1439,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/member/2" \
+    "http://127.0.0.1:8000/api/member/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1310,7 +1447,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/member/2"
+    "http://127.0.0.1:8000/api/member/1"
 );
 
 const headers = {
@@ -1342,11 +1479,11 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 2,
-    &quot;name&quot;: &quot;路萱雅&quot;,
-    &quot;group&quot;: &quot;Front-end&quot;,
-    &quot;created_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2023-08-16T06:42:10.000000Z&quot;
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;帥依庭&quot;,
+    &quot;group&quot;: &quot;UI/UX&quot;,
+    &quot;created_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2023-08-21T04:04:35.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -1441,10 +1578,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-member--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the member. Example: <code>2</code></p>
+<p>The ID of the member. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1462,7 +1599,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/member/2" \
+    "http://127.0.0.1:8000/api/member/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1470,7 +1607,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/member/2"
+    "http://127.0.0.1:8000/api/member/1"
 );
 
 const headers = {
@@ -1589,10 +1726,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-member--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the member. Example: <code>2</code></p>
+<p>The ID of the member. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1646,7 +1783,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-task">
             <blockquote>
-            <p>Example response (404):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1660,8 +1797,8 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;無法找到此網址&quot;,
-    &quot;code&quot;: 404
+    &quot;Status&quot;: &quot;error&quot;,
+    &quot;Message&quot;: &quot;invalid input of sort&quot;
 }</code>
  </pre>
     </span>
@@ -1778,8 +1915,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"task_descr\": \"mzgenjkiv\",
-    \"member_id\": 3
+    \"task_descr\": \"rmbezdgehjlsldq\",
+    \"member_id\": 5
 }"
 </code></pre></div>
 
@@ -1796,8 +1933,8 @@ const headers = {
 };
 
 let body = {
-    "task_descr": "mzgenjkiv",
-    "member_id": 3
+    "task_descr": "rmbezdgehjlsldq",
+    "member_id": 5
 };
 
 fetch(url, {
@@ -1823,9 +1960,10 @@ x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">[
-    &quot;data saved&quot;
-]</code>
+<code class="language-json" style="max-height: 300px;">{
+    &quot;Status&quot;: &quot;success&quot;,
+    &quot;Message&quot;: &quot;data saved&quot;
+}</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-task" hidden>
@@ -1915,10 +2053,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="task_descr"                data-endpoint="POSTapi-task"
-               value="mzgenjkiv"
+               value="rmbezdgehjlsldq"
                data-component="body">
     <br>
-<p>value 不能超過 255 個字元. Example: <code>mzgenjkiv</code></p>
+<p>value 不能超過 255 個字元. Example: <code>rmbezdgehjlsldq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>member_id</code></b>&nbsp;&nbsp;
@@ -1926,10 +2064,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="member_id"                data-endpoint="POSTapi-task"
-               value="3"
+               value="5"
                data-component="body">
     <br>
-<p>value 不能大於 255. Example: <code>3</code></p>
+<p>value 不能大於 255. Example: <code>5</code></p>
         </div>
         </form>
 
@@ -1989,12 +2127,13 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;task_descr&quot;: &quot;Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.&quot;,
-        &quot;member_id&quot;: &quot;4&quot;,
-        &quot;member_name&quot;: &quot;郗志&quot;,
-        &quot;member_group&quot;: &quot;Front-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16 14:42:10&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16 14:42:10&quot;
+        &quot;task_descr&quot;: &quot;buy coffee&quot;,
+        &quot;member_id&quot;: &quot;9&quot;,
+        &quot;member_name&quot;: &quot;公孫思宗&quot;,
+        &quot;member_group&quot;: &quot;APP&quot;,
+        &quot;creator_id&quot;: &quot;9&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21 12:04:34&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-21 14:15:20&quot;
     }
 }</code>
  </pre>
@@ -2093,7 +2232,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="task-PUTapi-task--id-">Update the specified resource in storage.</h2>
+                    <h2 id="task-PUTapi-task--id-">PUT api/task/{id}</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2110,7 +2249,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://127.0.0.1:8000/api/task/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"task_descr\": \"reprehenderit\",
+    \"member_id\": 9,
+    \"creator_id\": 9
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -2124,9 +2269,16 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "task_descr": "reprehenderit",
+    "member_id": 9,
+    "creator_id": 9
+};
+
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -2149,12 +2301,13 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;task_descr&quot;: &quot;Quaerat suscipit ipsa est officiis nemo harum consequatur. Et vero minus tempora temporibus esse. Labore id sit recusandae laudantium adipisci. Voluptatem amet rerum aperiam et voluptatem quia.&quot;,
-        &quot;member_id&quot;: &quot;4&quot;,
-        &quot;member_name&quot;: &quot;郗志&quot;,
-        &quot;member_group&quot;: &quot;Front-end&quot;,
-        &quot;created_at&quot;: &quot;2023-08-16 14:42:10&quot;,
-        &quot;updated_at&quot;: &quot;2023-08-16 14:42:10&quot;
+        &quot;task_descr&quot;: &quot;reprehenderit&quot;,
+        &quot;member_id&quot;: &quot;9&quot;,
+        &quot;member_name&quot;: &quot;公孫思宗&quot;,
+        &quot;member_group&quot;: &quot;APP&quot;,
+        &quot;creator_id&quot;: &quot;9&quot;,
+        &quot;created_at&quot;: &quot;2023-08-21 12:04:34&quot;,
+        &quot;updated_at&quot;: &quot;2023-08-22 10:26:59&quot;
     }
 }</code>
  </pre>
@@ -2255,7 +2408,41 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the task. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>task_descr</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="task_descr"                data-endpoint="PUTapi-task--id-"
+               value="reprehenderit"
+               data-component="body">
+    <br>
+<p>The context of the task description. Example: <code>reprehenderit</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>member_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="member_id"                data-endpoint="PUTapi-task--id-"
+               value="9"
+               data-component="body">
+    <br>
+<p>The id of the member who is asign to the task. Example: <code>9</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>creator_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="creator_id"                data-endpoint="PUTapi-task--id-"
+               value="9"
+               data-component="body">
+    <br>
+<p>The id of the user who creat the task. Example: <code>9</code></p>
+        </div>
+        </form>
 
                     <h2 id="task-DELETEapi-task--id-">Remove the specified resource from storage.</h2>
 
@@ -2297,18 +2484,23 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-task--id-">
             <blockquote>
-            <p>Example response (204):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-<code>Empty response</code>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;Status&quot;: &quot;success&quot;,
+    &quot;Message&quot;: &quot;刪除成功&quot;
+}</code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-task--id-" hidden>

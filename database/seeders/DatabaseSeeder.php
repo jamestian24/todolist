@@ -29,9 +29,10 @@ class DatabaseSeeder extends Seeder
         User::truncate();
 
         // User::factory(5)->create();
+        $this->call(UserSeeder::class);
         Task::factory(50)->create();
         member::factory(12)->create();
-        User::factory(12)->create();
+        User::factory(11)->create();
         Schema::enableForeignKeyConstraints();
     }
 }
